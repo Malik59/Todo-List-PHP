@@ -22,7 +22,10 @@
             <div class="todo-container">
                 <h1>Ma Liste</h1>
                 <div class="todo-form">
-
+                    <form action="">
+                        <input type="text">
+                        <button type="submit">Valider</button>
+                    </form>
                 </div>
                 <div class="todo-list">
 
