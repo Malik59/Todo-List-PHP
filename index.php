@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Merienda:wght@700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="public/css/style.css">
+    <?php require_once __DIR__ . "/php/head.php" ?>
     <title>Todo list</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">My todo list</div>
-        </header>
+    <?php require_once __DIR__ . "/php/header.php" ?>
+        
 
         <div class="content">
             <div class="todo-container">
@@ -32,8 +23,9 @@
                 </div>
             </div>
         </div>
-
-        <footer> Copyright 2024 </footer>
+    <?php require_once __DIR__ . "/php/footer.php" ?>
+    
+        
     </div>
 
 </body>
