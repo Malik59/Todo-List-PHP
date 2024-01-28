@@ -54,14 +54,21 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="todo-form">
                     <form action="/" method="POST">
                         <input type="text" name="todo">
-                        <button>Ajouter</button>
+                        <button class="btn">Ajouter</button>
                     </form>
                     <?php if($error): ?>
                     <p class="text-error"><?= $error ?></p>
                     <?php endif; ?>
                 </div>
-                <div class="todo-list">
-                </div>
+                <ul class="todo-list">
+                    <?php foreach($todos as $t): ?>
+                        <li>
+                            <p class="todo-name"><?= $t["name"] ?></p>
+                            <button class="btn btn-validate">Valider</button>
+                            <button class="btn btn-delete">Supprimer</button>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     <?php require_once __DIR__ . "/includes/footer.php" ?>
