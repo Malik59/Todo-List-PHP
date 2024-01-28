@@ -4,7 +4,7 @@ const ERROR_TOO_SHORT = "Veuillez saisir au moins 5 caractères";
 $error = "";
 
 if($_SERVER["REQUEST_METHOD"] === "POST") {
-    $_POST = filter_var(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $todo = $_POST["todo"] ?? "";
 
     if(!$todo) {
