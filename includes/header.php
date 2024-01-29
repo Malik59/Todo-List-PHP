@@ -1,3 +1,3 @@
 <header>
-    <div class="logo">My todo list</div>
+    <div class="logo">Blog Version 1</div>
 </header>

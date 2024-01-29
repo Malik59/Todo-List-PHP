@@ -1,7 +1,7 @@
 :root {
---primary: #2D3250;
---secondary: #424769;
---red: rgb(235, 47, 47);
+--primary: #3c6382;
+--secondary: #60a3bc;
+--tertiary: #82ccdd;
 --background-light: #ecf0f1;
 --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -22,24 +22,6 @@ body {
 p {
     margin: 0;
     padding: 0;
-}
-
-.btn {
-    border-radius: 3px;
-    padding: 0.5rem;
-    border: none;
-    color: white;
-    font-weight: 500;
-    background-color: var(--secondary);
-
-}
-
-.btn-validate {
-    margin-right: 0.5rem;
-}
-
-.btn-delete {
-    background-color: var(--red);
 }
 
 .container {
@@ -66,71 +48,8 @@ header {
 
 /* content */
 .content {
-    background-color: var(--background-light);
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.todo-container {
-    background-color: white;
-    min-width: 50rem;
-    max-width: 60rem;
-    min-height: 40rem;
-    padding: 1.5rem 2.5rem;
-    box-shadow: var(--box-shadow);
-    border-radius: 3px;
-}
-
-form {
-    display: flex;
-}
-
-h1 {
-    text-align: center;
-    color: var(--primary);
-}
-
-.todo-form input {
-    flex: 1;
-    margin-right: 1rem;
-    padding: 0.4rem;
-    border-radius: 3px;
-    border: none;
-    box-shadow: var(--box-shadow);
-}
-
-
-
-.text-error {
-    color: var(--red);
-    font-weight: bold;
-}
-
-.todo-list {
-    padding-left: 0;
-    margin-top: 3rem;
-    color: black;
-}
-
-li {
-    display: flex;
-    padding: 0.5rem 0;
-}
-
-li:nth-child(odd) {
-    background-color: var(--background-light);
-}
-
-.low-opacity {
-    opacity: 0.5;
-}
-
-.todo-name {
     flex: 1;
 }
-
 
 /* footer */
 footer {
