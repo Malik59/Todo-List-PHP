@@ -29,6 +29,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
             "id" => time()
         ]];
         file_put_contents($filename, json_encode($todos));
+        header("Location: /");
     }
 }
 
@@ -65,9 +66,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                         <li class=<?= $t["done"] ? "low-opacity" : ""  ?>>
                             <p class="todo-name"><?= $t["name"] ?></p>
                             <a href="edit-todo.php?id=<?= $t["id"] ?>">
-                                <button class="btn btn-validate">Valider</button>
+                                <button class="btn btn-validate"><?= $t["done"] ? "Annuler" : "Valider" ?></button>
                             </a>
-                            <button class="btn btn-delete">Supprimer</button>
+                            <a href="remove-todo.php?id=<?= $t["id"] ?>">
+                                <button class="btn btn-delete">Supprimer</button>
+                            </a>
                         </li>
                     <?php endforeach; ?>
                 </ul>

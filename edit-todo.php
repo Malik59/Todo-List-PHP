@@ -13,6 +13,6 @@ if ($id) {
         file_put_contents($filename, json_encode($todos));
     }
 }
-header("Location: http://localhost:3000");
+header("Location: /");
 
 
