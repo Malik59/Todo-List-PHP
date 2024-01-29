@@ -62,9 +62,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
                 </div>
                 <ul class="todo-list">
                     <?php foreach($todos as $t): ?>
-                        <li>
+                        <li class=<?= $t["done"] ? "low-opacity" : ""  ?>>
                             <p class="todo-name"><?= $t["name"] ?></p>
-                            <button class="btn btn-validate">Valider</button>
+                            <a href="edit-todo.php?id=<?= $t["id"] ?>">
+                                <button class="btn btn-validate">Valider</button>
+                            </a>
                             <button class="btn btn-delete">Supprimer</button>
                         </li>
                     <?php endforeach; ?>
