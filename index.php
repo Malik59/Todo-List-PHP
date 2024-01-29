@@ -42,7 +42,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="fr">
 <head>
     <?php require_once __DIR__ . "/includes/head.php" ?>
-    <title>Todo list</title>
+    <title>Todo list PHP</title>
 </head>
 <body>
     <div class="container">
